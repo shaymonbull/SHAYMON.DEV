@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shaymon dos Santos — Desenvolvedor Full Stack em Formação</title>
+<meta name="description" content="Currículo digital de Shaymon dos Santos Araujo Machado, estudante de ADS na UDF (Brasília). Aplicações web, SaaS e inteligência artificial.">
+<meta name="theme-color" content="#050608">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050608;--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.12);--fg:#F5F7FA;--mut:#9aa3b2;--blue:#1677FF;--neon:#00C8FF;--violet:#7B2CFF;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--fg);font:400 16px/1.65 'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h2{font-size:clamp(26px,4.5vw,40px);line-height:1.15;letter-spacing:-.02em;margin-bottom:10px}
+.sub{color:var(--mut);max-width:60ch;margin-bottom:32px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 22px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--fg);font:500 15px 'Space Grotesk',sans-serif;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--neon);box-shadow:0 8px 24px -10px var(--neon)}
+.btn.p{background:linear-gradient(135deg,var(--blue),var(--violet));border-color:transparent}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-block;font-size:12px;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--neon)}
+.chip.l{color:#c2a6ff}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(5,6,8,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{font-weight:700;letter-spacing:.02em}.logo i{font-style:normal;color:var(--neon)}
+.nav ul{display:flex;gap:22px;font-size:14px;color:var(--mut)}
+.nav ul a:hover{color:var(--fg)}
+#bg{display:none;min-height:40px;padding:0 14px;background:none;border:1px solid var(--line);border-radius:10px;color:var(--fg);font:inherit;cursor:pointer}
+#pr{position:fixed;top:0;left:0;height:3px;width:0;z-index:30;background:linear-gradient(90deg,var(--blue),var(--neon),var(--violet))}
+@media(max-width:820px){#bg{display:block}.nav ul{display:none;position:absolute;top:58px;left:0;right:0;flex-direction:column;gap:0;background:#050608;border-bottom:1px solid var(--line)}.nav ul.open{display:flex}.nav ul a{display:block;padding:15px 20px;border-top:1px solid var(--line);font-size:16px}}
+.hero{padding:48px 0 40px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(50% 50% at 80% 40%,rgba(22,119,255,.2),transparent 70%),radial-gradient(40% 40% at 10% 90%,rgba(123,44,255,.15),transparent 70%);pointer-events:none}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;position:relative}
+.hero small{color:var(--neon);font-size:14px}
+.hero h1{font-size:clamp(36px,7.5vw,66px);line-height:1.02;letter-spacing:-.035em;margin:8px 0 14px}
+.hero h3{font-size:clamp(17px,2.4vw,22px);font-weight:500;color:var(--neon);margin-bottom:14px}
+.hero p{color:var(--mut);max-width:52ch;margin-bottom:24px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.meta span{font-size:13px;color:var(--mut);padding:5px 12px;border:1px solid var(--line);border-radius:99px}
+.core{position:relative;height:380px}
+.core canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+@media(max-width:820px){.hg{grid-template-columns:1fr}.core{order:-1;height:230px}.hero{padding-top:20px}}
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:18px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+.card h4{font-size:19px;margin:8px 0 4px}.card p{color:var(--mut);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips span{font-size:14px;padding:7px 13px;border-radius:99px;border:1px solid var(--line);background:var(--card)}
+.sk{margin-bottom:26px}.sk h4{font-size:14px;color:var(--mut);font-weight:500;margin-bottom:10px}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:12px}
+.sg .card{padding:16px;transition:transform .2s,border-color .2s}
+.sg .card:hover{transform:translateY(-3px);border-color:var(--neon)}
+.sg b{display:block;margin-bottom:2px}.sg small{display:block;color:var(--mut);font-size:13px;margin-bottom:10px;line-height:1.4}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.pj{display:flex;flex-direction:column;gap:10px}
+.pj.f{grid-column:1/-1;border-color:rgba(0,200,255,.4);box-shadow:0 0 40px -20px var(--blue)}
+.pj h4{font-size:21px;margin:0}.pj p{color:var(--mut);flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{font-size:12px;padding:3px 10px;border-radius:99px;background:var(--card);border:1px solid var(--line)}
+.pj .btn{min-height:40px;padding:0 16px;font-size:14px}
+.pj .btn[aria-disabled=true]{opacity:.4;pointer-events:none}
+.ai{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:22px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:18px}
+.flow span{font-size:13px;padding:8px 14px;border-radius:99px;border:1px solid var(--line);color:var(--mut);transition:.35s}
+.flow span.on{color:#fff;border-color:var(--neon);background:rgba(0,200,255,.12)}
+.note{border-left:3px solid var(--violet);padding:4px 0 4px 14px;color:var(--mut);max-width:70ch}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;counter-reset:s}
+.steps .card{counter-increment:s}
+.steps .card:before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--violet));font-weight:700;font-size:14px;margin-bottom:10px}
+.ct{text-align:center;padding:80px 0}
+.ct h2{margin:0 auto 12px;max-width:16ch;font-size:clamp(30px,6vw,56px)}
+.ct .sub{margin:0 auto 26px}.ct .btns{justify-content:center}
+.soc{margin-top:18px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;color:var(--mut);font-size:14px}
+footer{text-align:center;padding:24px 20px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}.js .rv{opacity:1;transform:none}}
+@media print{:root{--bg:#fff;--fg:#111;--mut:#444;--line:#ccc;--card:#fff;--neon:#0a58ca}body{background:#fff;color:#111;font-size:12px}header.nav,#pr,.core,.btns,.flow,.soc,#bg{display:none!important}section{padding:14px 0;break-inside:avoid}.hero:before{display:none}.hero h1{font-size:30px}.js .rv{opacity:1;transform:none}.pj.f{box-shadow:none}.hg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="pr"></div>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#topo">SHAYMON<i>.DEV</i></a>
+  <button id="bg" aria-expanded="false" aria-controls="mn">Menu</button>
+  <ul id="mn">
+    <li><a href="#formacao">Formação</a></li><li><a href="#competencias">Competências</a></li><li><a href="#projetos">Projetos</a></li>
+    <li><a href="#ia">IA</a></li><li><a href="#processo">Processo</a></li><li><a href="#contato">Contato</a></li>
+  </ul>
+</div></header>
+
+<main id="topo">
+<section class="hero"><div class="wrap hg">
+  <div>
+    <small>Olá, eu sou</small>
+    <h1>Shaymon dos Santos Araujo Machado</h1>
+    <h3>Desenvolvedor Full Stack em formação</h3>
+    <p>Estudante de Análise e Desenvolvimento de Sistemas. Crio sites, aplicações web, dashboards e plataformas SaaS usando ferramentas modernas e inteligência artificial para transformar ideias em soluções digitais.</p>
+    <div class="btns">
+      <a class="btn p" href="#projetos">Ver projetos</a>
+      <a class="btn" href="#contato">Entrar em contato</a>
+      <button class="btn" onclick="window.print()">Baixar currículo (PDF)</button>
+    </div>
+    <div class="meta"><span>Brasília, DF</span><span>UDF — Campus Brasília</span><span>Aberto a estágio e projetos</span></div>
+  </div>
+  <div class="core" aria-hidden="true"><canvas id="cv"></canvas></div>
+</div></section>
+
+<section id="formacao"><div class="wrap">
+  <h2>Formação e aprendizado</h2>
+  <p class="sub">Em constante aprendizado, com dedicação e iniciativa para evoluir a cada projeto.</p>
+  <div class="two">
+    <div class="card rv"><span class="chip">Em andamento</span><h4>UDF — Centro Universitário</h4><p>Análise e Desenvolvimento de Sistemas<br>Campus Brasília</p></div>
+    <div class="card rv"><p>Áreas que estou estudando e praticando</p>
+      <div class="chips"><span>Engenharia de software</span><span>Arquitetura de aplicações</span><span>APIs</span><span>Banco de dados</span><span>Programação</span><span>Desenvolvimento Full Stack</span><span>IA aplicada</span></div></div>
+  </div>
+</div></section>
+
+<section id="competencias"><div class="wrap">
+  <h2>Competências técnicas</h2>
+  <p class="sub">Sem notas inventadas: cada item mostra se já uso em projetos ou se ainda estou aprendendo.</p>
+  <div id="sk"></div>
+</div></section>
+
+<section id="projetos"><div class="wrap">
+  <h2>Projetos</h2>
+  <p class="sub">Projetos que construí, com link para ver funcionando e para ler o código.</p>
+  <div class="pg" id="pg"></div>
+</div></section>
+
+<section id="ia"><div class="wrap">
+  <h2>Desenvolvimento com inteligência artificial</h2>
+  <p class="sub">Uso IA para ganhar velocidade, e reviso, testo e valido tudo que entra no projeto.</p>
+  <div class="ai">
+    <div class="card rv"><h4>Claude Code</h4><p>Programação no terminal: criar arquivos, ajustar código e corrigir erros de build.</p></div>
+    <div class="card rv"><h4>ChatGPT</h4><p>Planejamento de funcionalidades, prompts, resolução de problemas e estruturação de projetos.</p></div>
+    <div class="card rv"><h4>Google Gemini</h4><p>Pesquisa, exploração de ideias e apoio na escolha de soluções.</p></div>
+  </div>
+  <div class="flow" id="fl" aria-label="Fluxo de trabalho"></div>
+  <p class="note">A IA é uma ferramenta de produtividade. O objetivo é compreender, testar e melhorar o código desenvolvido.</p>
+</div></section>
+
+<section id="processo"><div class="wrap">
+  <h2>Da ideia à aplicação</h2>
+  <p class="sub">Como organizo o trabalho em cada projeto.</p>
+  <div class="steps" id="st"></div>
+</div></section>
+
+<section id="contato" class="ct"><div class="wrap">
+  <h2>Vamos construir algo incrível?</h2>
+  <p class="sub">Estou aberto a oportunidades profissionais, estágios, projetos freelance e colaborações. Se você procura alguém dedicado, curioso e disposto a evoluir, vamos conversar.</p>
+  <div class="btns" id="cb"></div>
+  <div class="soc" id="so"></div>
+</div></section>
+</main>
+<footer>© <span id="yr"></span> Shaymon dos Santos Araujo Machado · Brasília, DF</footer>
+
+<script>document.documentElement.classList.add('js')</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ===== EDITE AQUI ===== */
+var CONTACT={github:"https://github.com/shaymonbull",email:"",whatsapp:"",linkedin:"",instagram:""}; /* whatsapp: só números com DDI, ex.: 5561999999999 */
+var PROJECTS=[
+ {name:"Este portfólio (SHAYMON.DEV)",featured:true,desc:"Currículo digital responsivo com elemento 3D interativo em Three.js, dados editáveis em JavaScript e versão para impressão em PDF. Publicado no GitHub Pages.",tech:["HTML5","CSS3","JavaScript","Three.js","GitHub Pages"],demo:"https://shaymonbull.github.io/SHAYMON.DEV",repo:"https://github.com/shaymonbull/SHAYMON.DEV"}
+ /* para adicionar outro: {name:"Nome",desc:"O que faz",tech:["Next.js"],demo:"link",repo:"link"}, */
+];
+var SKILLS=[
+ ["Front-end",[["JavaScript","Linguagem da web","u"],["TypeScript","JavaScript com tipos","u"],["Next.js","Framework React","u"],["HTML5","Estrutura de páginas","u"],["CSS3","Estilo e layout responsivo","u"]]],
+ ["Back-end e banco de dados",[["Node.js","JavaScript no servidor","a"],["PostgreSQL","Banco de dados relacional","a"]]],
+ ["Design, versionamento e deploy",[["Figma","Prototipagem de interfaces","u"],["Git","Controle de versão","u"],["GitHub","Repositórios e colaboração","u"],["Vercel","Publicação de aplicações","u"],["GitHub Pages","Publicação de sites","u"]]],
+ ["Inteligência artificial",[["Claude Code","Programação assistida","u"],["ChatGPT","Planejamento e prompts","u"],["Google Gemini","Pesquisa e ideias","u"]]]
+];
+/* ===== FIM DA EDIÇÃO ===== */
+var $=function(s){return document.querySelector(s)};
+var RM=matchMedia('(prefers-reduced-motion:reduce)').matches,MOB=innerWidth<820;
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+$('#yr').textContent=new Date().getFullYear();
+$('#bg').onclick=function(){var o=$('#mn').classList.toggle('open');this.setAttribute('aria-expanded',o)};
+$('#mn').onclick=function(){$('#mn').classList.remove('open');$('#bg').setAttribute('aria-expanded','false')};
+addEventListener('scroll',function(){var h=document.documentElement;$('#pr').style.width=(scrollY/Math.max(1,h.scrollHeight-innerHeight)*100)+'%'},{passive:true});
+$('#sk').innerHTML=SKILLS.map(function(g){return '<div class="sk"><h4>'+esc(g[0])+'</h4><div class="sg">'+g[1].map(function(i){return '<div class="card rv"><b>'+esc(i[0])+'</b><small>'+esc(i[1])+'</small><span class="chip'+(i[2]==='a'?' l':'')+'">'+(i[2]==='a'?'Em aprendizado':'Utilizado em projetos')+'</span></div>'}).join('')+'</div></div>'}).join('');
+$('#pg').innerHTML=PROJECTS.map(function(p){
+ var d=p.demo?'href="'+esc(p.demo)+'" target="_blank" rel="noopener"':'aria-disabled="true"',r=p.repo?'href="'+esc(p.repo)+'" target="_blank" rel="noopener"':'aria-disabled="true"';
+ return '<article class="card pj rv'+(p.featured?' f':'')+'"><div><span class="chip">'+(p.featured?'Projeto em destaque':'Projeto')+'</span></div><h4>'+esc(p.name)+'</h4><p>'+esc(p.desc)+'</p><div class="tags">'+p.tech.map(function(t){return '<span>'+esc(t)+'</span>'}).join('')+'</div><div class="btns"><a class="btn p" '+d+'>Ver demonstração</a><a class="btn" '+r+'>Ver código no GitHub</a></div></article>'}).join('');
+var FL=['Ideia','Prompt','Planejamento','Código','Testes','Deploy'];
+$('#fl').innerHTML=FL.map(function(f){return '<span>'+f+'</span>'}).join('');
+var fs=[].slice.call(document.querySelectorAll('#fl span')),fi=0;
+function tick(){fs.forEach(function(s,i){s.classList.toggle('on',i<=fi)});fi=(fi+1)%(fs.length+1)}
+if(RM){fs.forEach(function(s){s.classList.add('on')})}else{tick();setInterval(tick,950)}
+var PS=[["Ideia","Identificação do problema e planejamento da solução."],["Prototipagem","Estrutura visual e experiência do usuário no Figma."],["Desenvolvimento","Implementação com JavaScript, TypeScript, Next.js e Node.js."],["Banco de dados","Estruturação e integração com PostgreSQL."],["Inteligência artificial","Claude Code, ChatGPT e Gemini como apoio, com revisão do código."],["Deploy","Versionamento com Git e publicação na Vercel."]];
+$('#st').innerHTML=PS.map(function(s){return '<div class="card rv"><h4>'+s[0]+'</h4><p>'+s[1]+'</p></div>'}).join('');
+var b=['<a class="btn p" href="'+CONTACT.github+'" target="_blank" rel="noopener">Meu GitHub</a>'];
+if(CONTACT.email)b.push('<a class="btn" href="mailto:'+esc(CONTACT.email)+'">Enviar e-mail</a>');
+if(CONTACT.whatsapp)b.push('<a class="btn" href="https://wa.me/'+esc(CONTACT.whatsapp)+'" target="_blank" rel="noopener">Falar no WhatsApp</a>');
+$('#cb').innerHTML=b.join('');
+$('#so').innerHTML=[['linkedin','LinkedIn'],['instagram','Instagram']].filter(function(x){return CONTACT[x[0]]}).map(function(x){return '<a href="'+esc(CONTACT[x[0]])+'" target="_blank" rel="noopener">'+x[1]+'</a>'}).join('');
+var els=[].slice.call(document.querySelectorAll('.rv'));
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});els.forEach(function(e){io.observe(e)})}
+setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},2500);
+(function(){
+ if(!window.THREE)return;var cv=$('#cv'),R;
+ try{R=new THREE.WebGLRenderer({canvas:cv,antialias:!MOB,alpha:true})}catch(e){return}
+ R.setPixelRatio(Math.min(devicePixelRatio||1,MOB?1.5:2));
+ var S=new THREE.Scene(),C=new THREE.PerspectiveCamera(45,1,.1,100);C.position.z=7;
+ var G=new THREE.Group();S.add(G);
+ G.add(new THREE.Mesh(new THREE.IcosahedronGeometry(1.4,2),new THREE.MeshStandardMaterial({color:0x0a1a3a,emissive:0x1677ff,emissiveIntensity:.4,metalness:.8,roughness:.3})));
+ var w=new THREE.Mesh(new THREE.IcosahedronGeometry(1.65,1),new THREE.MeshBasicMaterial({color:0x00c8ff,wireframe:true,transparent:true,opacity:.45}));G.add(w);
+ function ring(r,c,t){var m=new THREE.Mesh(new THREE.TorusGeometry(r,.012,8,100),new THREE.MeshBasicMaterial({color:c,transparent:true,opacity:.7}));m.rotation.set(t,0,t/2);G.add(m);return m}
+ var r1=ring(2.2,0x00c8ff,1.2),r2=ring(2.7,0x7b2cff,.4);
+ var N=MOB?350:1000,P=new Float32Array(N*3),i;
+ for(i=0;i<N;i++){var r=2.2+Math.random()*2.2,a=Math.random()*6.283,bb=Math.acos(2*Math.random()-1);P[i*3]=r*Math.sin(bb)*Math.cos(a);P[i*3+1]=r*Math.sin(bb)*Math.sin(a)*.7;P[i*3+2]=r*Math.cos(bb)}
+ var g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(P,3));
+ var pts=new THREE.Points(g,new THREE.PointsMaterial({color:0x66d9ff,size:.03,transparent:true,opacity:.85}));G.add(pts);
+ var orb=[];for(i=0;i<4;i++){var o=new THREE.Mesh(new THREE.SphereGeometry(.07,12,12),new THREE.MeshBasicMaterial({color:i%2?0x7b2cff:0x00c8ff}));G.add(o);orb.push(o)}
+ S.add(new THREE.AmbientLight(0x4466aa,.7));
+ var L1=new THREE.PointLight(0x00c8ff,2.2,20);L1.position.set(4,3,5);var L2=new THREE.PointLight(0x7b2cff,2,20);L2.position.set(-4,-2,4);S.add(L1,L2);
+ var mx=0,my=0,vis=true,clk=new THREE.Clock();
+ addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+ function size(){var W=cv.clientWidth,H=cv.clientHeight;if(!W||!H)return;R.setSize(W,H,false);C.aspect=W/H;C.updateProjectionMatrix()}
+ size();addEventListener('resize',size);
+ if('IntersectionObserver' in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(cv);
+ function loop(){requestAnimationFrame(loop);if(!vis||document.hidden)return;var t=RM?0:clk.getElapsedTime();
+  G.rotation.y+=(mx*1.1+t*.15-G.rotation.y)*.05;G.rotation.x+=(my*.7-G.rotation.x)*.05;
+  w.rotation.y=-t*.3;r1.rotation.z=t*.4;r2.rotation.x=.4+t*.25;pts.rotation.y=t*.05;
+  for(var k=0;k<orb.length;k++){var an=t*(.6+k*.15)+k*1.5,rr=2.2+k*.15;orb[k].position.set(Math.cos(an)*rr,Math.sin(an*1.3)*.9,Math.sin(an)*rr)}
+  R.render(S,C)}
+ loop();
+})();
+</script>
+</body>
+</html>
